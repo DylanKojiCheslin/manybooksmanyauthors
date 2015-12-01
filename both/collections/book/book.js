@@ -20,8 +20,8 @@ Book.appendSchema({
 });
 
 Book.methods({
-  "fullName": function(){
-  	return this.givenName + " " + middleName + " " + this.famlyName;
+  "fullTitle": function(){
+  	return this.title + " " + this.subtitle;
   },
   "bookSlug": function(){
   	return this._id;
