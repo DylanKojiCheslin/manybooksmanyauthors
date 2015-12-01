@@ -28,5 +28,4 @@ Author.methods({
   "listBooksWritenBy": function(){
       return "no, you list books writen by!";
     }
-  }
 });

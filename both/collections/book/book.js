@@ -19,17 +19,16 @@ Book.appendSchema({
 
 });
 
-Classes.methods({
-	"fullName": function(){
-		return this.givenName + " " + middleName + " " + this.famlyName;
-	},
-	"bookSlug": function(){
-		return this._id;
-	},
+Book.methods({
+  "fullName": function(){
+  	return this.givenName + " " + middleName + " " + this.famlyName;
+  },
+  "bookSlug": function(){
+  	return this._id;
+  },
   "authors": function(){
       return "um, one or more people or something?";
     }
-  }
 });
 
 // genre
