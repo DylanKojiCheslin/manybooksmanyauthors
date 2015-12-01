@@ -1,6 +1,7 @@
 <template name="listAuthors">
   <div id="list-of-authors">
-    author <br>
-    other author
+    {{#each ofTheAuthors}}
+      {{> authorPartial}}
+    {{/each}}
   </div>
 </template>

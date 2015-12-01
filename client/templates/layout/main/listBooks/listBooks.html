@@ -1,6 +1,7 @@
 <template name="listBooks">
   <div id="list-of-books">
-    book <br>
-    otherbook
+    {{#each ofTheBooks}}
+      {{> bookPartial}}
+    {{/each}}
   </div>
 </template>
