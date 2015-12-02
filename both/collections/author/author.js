@@ -25,7 +25,14 @@ Author.methods({
 	"authorSlug": function(){
 		return this._id;
 	},
-  "listBooksWritenBy": function(){
-      return "no, you list books writen by!";
+  "listFullTitlesOfBooksWritenBy": function(){
+    var bookCurssor = {};
+    var bookArray = [];
+    var getBookName = function(element){
+      return element.fullTitle()
+    };
+    bookCurssor = this.getLinkedClasses();
+    bookArray = classesCurssor.map(getBookName);
+    return bookArray;
     }
 });

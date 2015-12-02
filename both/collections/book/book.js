@@ -27,7 +27,14 @@ Book.methods({
   	return this._id;
   },
   "authors": function(){
-      return "um, one or more people or something?";
+    var authorCurssor = {};
+    var authorArray = [];
+    var getAuthorName = function(element){
+      return element.fullName()
+    };
+    authorCurssor = this.getLinkedAuthor();
+    authorArray = authorCurssor.map(getAuthorName);
+    return authorArray;
     }
 });
 
