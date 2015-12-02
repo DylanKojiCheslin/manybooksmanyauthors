@@ -31,7 +31,7 @@ Author.methods({
     var getBookName = function(element){
       return element.fullTitle()
     };
-    bookCurssor = this.getLinkedClasses();
+    bookCurssor = this.getLinkedBook();
     bookArray = classesCurssor.map(getBookName);
     return bookArray;
     }
