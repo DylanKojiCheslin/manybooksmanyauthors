@@ -1,1 +1,9 @@
 /* CSS declarations go here */
+.bordered {
+  border: 2px solid #ccc;
+  width: 20em;
+}
+
+.being-linked {
+  background-color: blue;
+}
