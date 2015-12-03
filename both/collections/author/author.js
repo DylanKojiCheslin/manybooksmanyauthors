@@ -32,7 +32,7 @@ Author.methods({
       return element.fullTitle()
     };
     bookCurssor = this.getLinkedBook();
-    bookArray = classesCurssor.map(getBookName);
+    bookArray = bookCurssor.map(getBookName);
     return bookArray;
     }
 });
