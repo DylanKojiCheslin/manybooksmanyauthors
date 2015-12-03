@@ -9,6 +9,10 @@ Meteor.startup(function(){
        "famlyName":"Smith",
        "middleName":"pertender",
       },
+      {"givenName":"Sun",
+       "famlyName":"Wu",
+       "middleName":"Changqing",
+      },
     );
   }
   if (! BookCollection.findOne()) {
@@ -20,6 +24,10 @@ Meteor.startup(function(){
       {"title":"Being smart for Dummies",
        "subtitle":"Wow your friends with your Brains",
        "description":"from the award winning for Dummies book seires, a guide on how to not be a Dummie",
+      },
+      {"title":"The Art of War",
+       "subtitle":"the ultimate guide to strategy",
+       "description":"Know your enimes as you know yourself",
       },
     );
   }
