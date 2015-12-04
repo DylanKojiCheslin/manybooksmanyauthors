@@ -1,0 +1,7 @@
+<template name="author">
+  Name : {{fullName}} <br>
+  Books: <br>
+  {{#if hasLinkedBooks}}
+    {{listFullTitlesOfBooksWritenBy}}
+  {{/if}}
+</template>

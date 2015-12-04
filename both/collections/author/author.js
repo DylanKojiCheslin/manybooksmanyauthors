@@ -25,6 +25,9 @@ Author.methods({
 	"authorSlug": function(){
 		return this._id;
 	},
+  "hasLinkedBooks": function(){
+    return this.links;
+  },
   "listFullTitlesOfBooksWritenBy": function(){
     var bookCurssor = {};
     var bookArray = [];

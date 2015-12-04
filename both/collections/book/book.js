@@ -26,6 +26,9 @@ Book.methods({
   "bookSlug": function(){
   	return this._id;
   },
+  "hasLinkedAuthors": function(){
+    return this.links;
+  },
   "authors": function(){
     var authorCurssor = {};
     var authorArray = [];
