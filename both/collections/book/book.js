@@ -21,7 +21,7 @@ Book.appendSchema({
 
 Book.methods({
   "fullTitle": function(){
-  	return this.title + " " + this.subtitle;
+  	return this.title + " : " + this.subtitle;
   },
   "bookSlug": function(){
   	return this._id;
