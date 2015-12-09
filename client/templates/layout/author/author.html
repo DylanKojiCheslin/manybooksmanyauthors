@@ -2,6 +2,8 @@
   Name : {{fullName}} <br>
   Books: <br>
   {{#if hasLinkedBooks}}
-    {{listFullTitlesOfBooksWritenBy}}
+    {{#each listFullTitlesOfBooksWritenBy}}
+      {{this}}<br>
+    {{/each}}
   {{/if}}
 </template>

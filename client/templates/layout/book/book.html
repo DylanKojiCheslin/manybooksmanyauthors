@@ -1,6 +1,8 @@
 <template name="book">
   Title : {{fullTitle}} <br>
   {{#if hasLinkedAuthors}}
-    Written by : {{authors}}
+    {{#each authors}}
+      Written by : {{this}}<br>
+    {{/each}}
   {{/if}}
 </template>
