@@ -17,4 +17,17 @@ Template.bookPartial.events({
        $(e.currentTarget).addClass("being-two-way-linked");
      }
   },
+  "click .book-unlink":function(e){
+    e.preventDefault();
+    var oldTwoWayLink = Session.get('TwoWayLink');
+    var oldTwoWayLinkType = Session.get('TwoWayLinkType');
+    if (oldTwoWayLink) {
+      if (oldTwoWayLinkType == "author") {
+       this.unlinkAuthor(oldTwoWayLink);
+        $(".being-two-way-linked").removeClass("being-two-way-linked");
+        Session.set("TwoWayLink", undefined);
+        Session.set("TwoWayLinkType", undefined);
+      }
+    }
+  }  
 });

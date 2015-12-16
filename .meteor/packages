@@ -23,4 +23,5 @@ aldeed:collection2
 aldeed:autoform
 socialize:linkable-model
 iron:router
+reactive-var
 dylankoji:many-to-many

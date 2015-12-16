@@ -8,7 +8,7 @@ Template.authorPartial.events({
         this.linkBook(oldTwoWayLink);
          $(".being-two-way-linked").removeClass("being-two-way-linked");
          Session.set("TwoWayLink", undefined);
-         Session.set("TwoWayLinkType", undefined); 
+         Session.set("TwoWayLinkType", undefined);
        }
      }
      else {
@@ -16,5 +16,18 @@ Template.authorPartial.events({
        Session.set("TwoWayLinkType", "author");
        $(e.currentTarget).addClass("being-two-way-linked");
      }
+  },
+  "click .author-unlink": function(e){
+    e.preventDefault();
+    var oldTwoWayLink = Session.get('TwoWayLink');
+    var oldTwoWayLinkType = Session.get('TwoWayLinkType');
+    if (oldTwoWayLink) {
+      if (oldTwoWayLinkType == "book") {
+       this.unlinkBook(oldTwoWayLink);
+        $(".being-two-way-linked").removeClass("being-two-way-linked");
+        Session.set("TwoWayLink", undefined);
+        Session.set("TwoWayLinkType", undefined);
+      }
+    }
   },
 });
